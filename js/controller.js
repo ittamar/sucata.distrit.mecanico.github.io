@@ -1,0 +1,1 @@
+let js01 = new Aja();

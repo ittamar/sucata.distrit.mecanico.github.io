@@ -12,7 +12,17 @@
   <link rel="manifest" href="/manifest.json">
   <meta name="google-site-verification" content="JN-n_jqXa-yd-js59chzUenJ85IEZ85WFrpqLg5t9C0" />
 </head>
-
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/sw.js')
+      .then(function () {
+        console.log('service worker registered');
+      })
+      .catch(function () {
+        console.warn('service worker failed');
+      });
+  }
+</script>
 <body>
 
   <div class="container-fluid">
@@ -218,17 +228,7 @@
   <script src="bootstrap/js/bootstrap.min.js"></script>
   <script src="js/js01.js"></script>
   <script src="js/controller.js"></script>
-  <script>
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/sw.js')
-      .then(function () {
-        console.log('service worker registered');
-      })
-      .catch(function () {
-        console.warn('service worker failed');
-      });
-  }
-</script>
+  
 
 </body>
 

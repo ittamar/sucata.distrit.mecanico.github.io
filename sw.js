@@ -7,6 +7,8 @@ self.addEventListener('install', function (event) {
         '/',
         '/index.html',
         '/manifest.js',
+        '/img/icones/palha-512.png',
+        '/img/icones/palha-144.png',
         ]);
     })
   )

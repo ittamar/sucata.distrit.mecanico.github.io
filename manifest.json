@@ -10,6 +10,17 @@
       "src": "img/icones/palho.png",
       "sizes": "72x72",
       "type": "image/png"
+    },
+    {
+      "src": "img/icones/palha-144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "img/icones/palha-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
     }
+    
   ]
 }

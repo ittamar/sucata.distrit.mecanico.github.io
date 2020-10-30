@@ -9,7 +9,8 @@ self.addEventListener('install', function (event) {
         '/manifest.js',
         '/img/icones/palha-512.png',
         '/img/icones/palha-144.png',
-        '/img/icones/palho.png',
+        '/img/icones/palho.png'
+        
         ]);
     })
   )
@@ -42,7 +43,8 @@ var urlsToCache = [
   '/index.html',
   '/img/icones/palha-512.png',
    '/img/icones/palha-144.png',
-    '/img/icones/palho.png'
+    '/img/icones/palho.png',
+    '/img/icones/android-chrome-96x96.png
 ];
 
 self.addEventListener('install', function(event) {

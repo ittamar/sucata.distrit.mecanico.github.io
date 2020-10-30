@@ -40,7 +40,10 @@ self.addEventListener('fetch', function (event) {
 var CACHE_NAME = 'my-site-cache-v1';
 var urlsToCache = [
   '/',
-  '/index.html'  
+  '/index.html',
+  '/img/icones/palha-512.png',
+   '/img/icones/palha-144.png',
+    '/img/icones/palho.png'
 ];
 
 self.addEventListener('install', function(event) {

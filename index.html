@@ -13,7 +13,7 @@
   <meta name="google-site-verification" content="JN-n_jqXa-yd-js59chzUenJ85IEZ85WFrpqLg5t9C0" />
 </head>
 <script>
-  if ('serviceWorker' in navigator) {
+ /* if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('/sw.js')
       .then(function () {
         console.log('service worker registered');
@@ -21,7 +21,19 @@
       .catch(function () {
         console.warn('service worker failed');
       });
-  }
+  }*/
+  if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('/sw.js').then(function(registration) {
+      // Registration was successful
+      console.log('ServiceWorker registration successful with scope: ', registration.scope);
+    }, function(err) {
+      // registration failed :(
+      console.log('ServiceWorker registration failed: ', err);
+    });
+  });
+}
+
 </script>
 <body>
 

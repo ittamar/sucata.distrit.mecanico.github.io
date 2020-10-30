@@ -245,7 +245,7 @@
   });
 }
   
-  let deferredPrompt;
+let deferredPrompt;
 const addBtn = document.querySelector('.add-button');
 //addBtn.style.display = 'none';
   window.addEventListener('beforeinstallprompt', (e) => {
@@ -257,6 +257,7 @@ const addBtn = document.querySelector('.add-button');
   addBtn.style.display = 'block';
 
   addBtn.addEventListener('click', (e) => {
+    console.log("teste");
     // hide our user interface that shows our A2HS button
     addBtn.style.display = 'none';
     // Show the prompt

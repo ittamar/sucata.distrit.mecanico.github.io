@@ -1,10 +1,6 @@
 {
   "name": "Sucatapb",
-  "short_name": "Sucatapb",
-  "theme_color": "#2a0044",
-  "background_color": "#2a0044",
-  "display": "standalone",
-  "start_url": "/index.html",
+  "short_name": "Sucatapb",  
   "icons": [
     {
       "src": "img/icones/palho.png",
@@ -27,5 +23,9 @@
       "type": "image/png"
     }
     
-  ]
+  ],
+  "theme_color": "#343a40",
+  "background_color": "#000000",
+  "display": "standalone",
+  "start_url": "/"
 }

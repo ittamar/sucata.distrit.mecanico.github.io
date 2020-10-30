@@ -20,6 +20,11 @@
       "src": "img/icones/palha-512.png",
       "sizes": "512x512",
       "type": "image/png"
+    },
+    {
+      "src": "img/icones/android-chrome-96x96.png",
+      "sizes": "512x512",
+      "type": "image/png"
     }
     
   ]

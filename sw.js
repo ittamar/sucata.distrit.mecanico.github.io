@@ -39,7 +39,7 @@ self.addEventListener('fetch', function (event) {
   );
 });*/
 
-var CACHE_NAME = 'my-site-cache-v1';
+var CACHE_NAME = 'my-site-cache-v2';
 let deferredPrompt;
 var urlsToCache = [
   '/index.html',

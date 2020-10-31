@@ -1,8 +1,9 @@
 var CACHE_NAME = 'my-site-cache-v3';
 let deferredPrompt;
 var urlsToCache = [
+  '/',
   '/index.html',
-  'manifest,webmanifest',
+  '/manifest,webmanifest',
   '/img/icones/palha-512.png',
    '/img/icones/palha-144.png',
     '/img/icones/palho.png',

@@ -1,4 +1,4 @@
-/*var CACHE_NAME = 'static-v2';
+/*var CACHE_NAME = 'static-v3';
 
 self.addEventListener('install', function (event) {
   event.waitUntil(
@@ -39,10 +39,11 @@ self.addEventListener('fetch', function (event) {
   );
 });*/
 
-var CACHE_NAME = 'my-site-cache-v2';
+var CACHE_NAME = 'my-site-cache-v3';
 let deferredPrompt;
 var urlsToCache = [
   '/index.html',
+  'manifeste,webmanifest',
   '/img/icones/palha-512.png',
    '/img/icones/palha-144.png',
     '/img/icones/palho.png',

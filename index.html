@@ -281,7 +281,21 @@ const addBtn = document.querySelector('.add-button');
 });
     
     window.addEventListener('appinstalled', (evt) => {
- app.logEvent('a2hs', 'installed');
+    console.log("instalado",evt);
+});
+  </script>
+  
+  
+  <script>
+     console.log("yy");
+   window.addEventListener("beforeinstallprompt", e => {
+  console.log("beforeinstallprompt fired");
+  // Prevent Chrome 76 and earlier from automatically showing a prompt
+  e.preventDefault();
+  // Stash the event so it can be triggered later.
+  deferredPrompt = e;
+  // Show the install button
+  
 });
   </script>
   

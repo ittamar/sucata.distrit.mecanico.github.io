@@ -25,7 +25,8 @@
     {
       "src": "img/icones/palhaco-196.png",
       "sizes": "196x196",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "maskable"
     }
     
   ],

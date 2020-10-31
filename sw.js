@@ -1,4 +1,4 @@
-var CACHE_NAME = 'my-site-cache-v4';
+var CACHE_NAME = 'my-site-cache-v5';
 let deferredPrompt;
 var urlsToCache = [
   '/',

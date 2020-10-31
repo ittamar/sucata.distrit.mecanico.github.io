@@ -1,4 +1,4 @@
-var CACHE_NAME = 'my-site-cache-v5';
+var CACHE_NAME = 'my-site-cache-v6';
 let deferredPrompt;
 var urlsToCache = [
   '/',
@@ -8,6 +8,7 @@ var urlsToCache = [
     '/img/icones/palho.png',
     '/img/icones/android-chrome-96x96.png',
     '/img/icones/palhaco-196.png',
+    '/img/icones/favico-16x16.png',
 ];
 
 self.addEventListener('install', function(event) {

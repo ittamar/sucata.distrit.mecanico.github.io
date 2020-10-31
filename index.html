@@ -252,7 +252,7 @@
     
 let deferredPrompt;
 const addBtn = document.querySelector('.add-button');
-    window.addEventListener('beforeinstallprompt', (e) => {
+    window.addEventListener('load', (e) => {
   // Prevent Chrome 67 and earlier from automatically showing the prompt
   e.preventDefault();
   // Stash the event so it can be triggered later.
@@ -279,19 +279,7 @@ const addBtn = document.querySelector('.add-button');
 });
   </script>
   
-  <script>
-    let installPromptEvent;
-
-window.addEventListener('beforeinstallprompt', (event) => {
-  // Prevent Chrome <= 67 from automatically showing the prompt
-  event.preventDefault();
-  // Stash the event so it can be triggered later.
-  installPromptEvent = event;
-  // Update UI notify the user they can add to home screen
-  //document.querySelector('#install-button').disabled = false;
-});
-
-  </script>
+  
 
 </body>
 

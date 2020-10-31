@@ -277,6 +277,10 @@ const addBtn = document.querySelector('.add-button');
       });
   });
 });
+    
+    window.addEventListener('appinstalled', (evt) => {
+ app.logEvent('a2hs', 'installed');
+});
   </script>
   
   

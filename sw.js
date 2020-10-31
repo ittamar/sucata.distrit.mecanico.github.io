@@ -3,8 +3,7 @@ let deferredPrompt;
 var urlsToCache = [
   '/',
   '/index.html',
-  '/manifest,webmanifest',
-  '/img/icones/palha-512.png',
+   '/img/icones/palha-512.png',
    '/img/icones/palha-144.png',
     '/img/icones/palho.png',
     '/img/icones/android-chrome-96x96.png'

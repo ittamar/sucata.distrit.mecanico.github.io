@@ -244,6 +244,14 @@
       console.log('ServiceWorker registration failed: ', err);
     });
   });
+    
+     window.addEventListener("beforeinstallprompt", function(e) { 
+  // log the platforms provided as options in an install prompt 
+  console.log(e.platforms); // e.g., ["web", "android", "windows"] 
+  e.userChoice.then(function(choiceResult) { 
+    console.log(choiceResult.outcome); // either "accepted" or "dismissed"
+  }, handleError); 
+});
 }
   
 
@@ -286,16 +294,7 @@ const addBtn = document.querySelector('.add-button');
 });
   </script>
   
-  <script type="text/javascript">
-    
-    window.addEventListener("beforeinstallprompt", function(e) { 
-  // log the platforms provided as options in an install prompt 
-  console.log(e.platforms); // e.g., ["web", "android", "windows"] 
-  e.userChoice.then(function(choiceResult) { 
-    console.log(choiceResult.outcome); // either "accepted" or "dismissed"
-  }, handleError); 
-});
-  </script>
+ 
   
   
   
